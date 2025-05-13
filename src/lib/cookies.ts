@@ -11,7 +11,7 @@ interface CookieOptions {
 export function setCookie(
   name: string,
   value: string,
-  options: CookiesOptions = {},
+  options: CookieOptions = {},
 ) {
   options = {
     path: "/",

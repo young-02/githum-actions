@@ -54,28 +54,28 @@ export function isCookieExists(name: string) {
 }
 
 // 쿠키 삭제
-function deleteCookie(name) {
-  document.cookie = encodeURIComponent(name) + "=; Max-Age= 0;";
-}
+// function deleteCookie(name) {
+//   document.cookie = encodeURIComponent(name) + "=; Max-Age= 0;";
+// }
 
-// 쿠키 삭제
-function deleteCookie2(name) {
-  // name, value 빈문자열 max-age 0으로 설정
-  setCookie(name, "", { "max-age": 0 });
-}
+// // 쿠키 삭제
+// function deleteCookie2(name) {
+//   // name, value 빈문자열 max-age 0으로 설정
+//   setCookie(name, "", { "max-age": 0 });
+// }
 
-function getCookieValue(name: string) {
-  //name 받아와서 인코딩 한다.
-  const encodeName = encodeURIComponent(name);
-  //쿠키 목록을 ; 기준으로 배열로 처리한다.
-  const cookies = document.cookie.split("; ");
-  //배열에서 인코딩한 쿠기 이름이 확인한다.
-  const cookie = cookies.find((cookie) => cookie.startsWith(encodeName + "="));
+// function getCookieValue(name: string) {
+//   //name 받아와서 인코딩 한다.
+//   const encodeName = encodeURIComponent(name);
+//   //쿠키 목록을 ; 기준으로 배열로 처리한다.
+//   const cookies = document.cookie.split("; ");
+//   //배열에서 인코딩한 쿠기 이름이 확인한다.
+//   const cookie = cookies.find((cookie) => cookie.startsWith(encodeName + "="));
 
-  //만약 쿠키가 있으면 쿠키 값을 디코딩 한다.
-  if (cookie) {
-    return decodeURIComponent(cookie.split("=")[1]);
-  }
-  // 없으면 undefined
-  return undefined;
-}
+//   //만약 쿠키가 있으면 쿠키 값을 디코딩 한다.
+//   if (cookie) {
+//     return decodeURIComponent(cookie.split("=")[1]);
+//   }
+//   // 없으면 undefined
+//   return undefined;
+// }
