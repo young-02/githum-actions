@@ -61,7 +61,7 @@ export default function SignupPage() {
             className="mx-auto w-78 rounded-md bg-blue-500 px-4 py-2 text-white"
             type="submit"
           >
-            회원가입!!!
+            회원가입
           </button>
         </form>
       )}
