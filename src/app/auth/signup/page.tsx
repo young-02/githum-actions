@@ -29,7 +29,7 @@ export default function SignupPage() {
       <h1 className="text-center text-2xl font-bold">회원가입 페이지</h1>
       {isNewUser ? (
         <div className="mx-auto w-78 border p-4 text-center">
-          신규 가입자시군요! 쿠폰이 발급됐어요!
+          신규 가입자시군요! 쿠폰이 발급됐어요!!!
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
